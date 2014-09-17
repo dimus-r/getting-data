@@ -15,7 +15,7 @@ Data description:
   5 - STANDING  
   6 - LAYING  
 
-  Measurements*:
+  *Measurements**:
 - tBodyAcc-XYZ
 - tGravityAcc-XYZ
 - tBodyAccJerk-XYZ
