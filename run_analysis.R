@@ -41,6 +41,7 @@ varnames <- as.character(features[idx, 2]); rm(idx, features)
 # instead of attempting one complicated perl expression, let's go step by step
 varnames <- gsub("\\(\\)", "", varnames) # remove parentheses
 varnames <- gsub("-", ".", varnames) # dash cannot be used in column names
+varnames <- gsub("(\\.[X-Z])", "\\L\\1", varnames, perl = TRUE) # .X, .Y and .Z to lowercase
 varnames <- gsub("BodyBody", "Body", varnames) # "body" is mistakenly duplicated in original "features"
 colnames(activity_data) <- c(varnames, "activity", "subject")
 
