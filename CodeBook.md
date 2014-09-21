@@ -57,7 +57,10 @@ You can also look at *features.txt* from the original data. The names of the var
 
 - Parentheses were removed
 - Dash ("-") replaced with a dot "."
+- X, Y and Z converted to lowercase 
 - "BodyBody" replaced with "Body" ("Body" is mistakenly duplicated in some of the original "features")
+
+In general naming loosely follows [Google's R Style Guide](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml#identifiers).
 
 Only mean and standard deviation (std) observations were used. The following transformations were applied to the original data:
 
